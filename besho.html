@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- start pup -->
+    <div class="container">
+        <button class="btn-wellcom" onclick="show_pup()">Wellcom</button>
+        <div class="card" id="pup">
+            <img src="./img/5610944.png">
+            <h2>Hello</h2>
+            <p>Wellcom TO قطاع المتقدم و الرائدات</p>
+            <button class="btn-close" onclick="hide_pup()">close</button>
+        </div>
+        <div class="page-home-btn">
+            <li><a href="./home .html">HOME</a></li>
+        </div>
+    </div>
+    <!-- end pup -->
+    <!-- start page home  -->
+
+    <script>
+        function show_pup() {
+            document.getElementById('pup').classList.add('open');
+        }
+
+        function hide_pup() {
+            document.getElementById('pup').classList.remove('open');
+        }
+    </script>
+    <footer id="footer">
+        <p>Copyright &copy; 2024 All rights reserved | made by <b> <a href="https://mohamedelkashef.com "
+                    target="_blank">
+                    Beshoy Mamdoh</a> </b></p>
+    </footer>
+</body>
+
+</html>
